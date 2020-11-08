@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="order.css">
+    <title>Order - DesignBox</title>
+    <script type="text/javascript" src="order.js"></script>
+  </head>
+  <body>
+    <!-- This is the header.-->
+    <header>
+      <strong>DesignBox</strong>
+    </header>
+    <div class="topnav">
+      <a href="#Home"><img src="Definite logo.png" id="logo"></a>
+      <a href="#Home">Home</a>
+      <a href="#Home">Portfolio</a>
+      <a href="#Home">Buy</a>
+      <a href="#Home">Courses</a>
+      <a href="#Home">Blog & info</a>
+      <a href="#Home">Setups</a>
+      <a href="#Home">Contact us</a>
+      <a href="#Home">About us</a>
+      <button>Log in</button>
+      <button>Sign in</button>
+    </div>
+    <div class="ads">
+      <img src="BANNERS1.jpg" id="addimage">
+    </div>
+    <!-- Left column -->
+    <div class="main">
+      <h2 class="mainheader">Order product</h2>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> -->
+        <!-- This section is of the introduction space which constitutes of the form and the tarriff. -->
+        <!-- This is the form. -->
+        <div class="leftwing">
+          <h2 class="formheaders">Buyer details</h2>
+          <form action="#">
+            <div id="fullpage">
+              <table border="0">
+                <tr>
+                  <td class="label_col">First name:</td>
+                  <td class="input_col"><input name="firstname" id="firstname" type="text" onblur="validateFirstName();"></td>
+                  <td class="feedback_col"><span id="firstNamePrompt">&nbsp;</span></td>
+                </tr>
+                <tr>
+                  <td class="label_col">Last name:</td>
+                  <td class="input_col"><input name="lastname" id="lastname" type="text" onblur="validateLastName();"></td>
+                  <td class="feedback_col"><span id="lastNamePrompt">&nbsp;</span></td>
+                </tr>
+                <tr>
+                  <td class="label_col">Phone number:</td>
+                  <td class="input_col"><input name="phonenumber" id="phonenumber"></td>
+                  <td class="feedback_col"><span id="phoneNamePrompt">xxx-xxx-xxx-xxx</span></td>
+                </tr>
+                <tr>
+                  <td class="label_col">Order quantity:</td>
+                  <td class="input_col"><input name="orderquantity" id="orderquantity"></td>
+                  <td class="feedback_col"><span id="quantityNamePrompt">1-35</span></td>
+                </tr>
+                <tr>
+                  <td class="label_col">Item price:</td>
+                  <td class="input_col"><input name="itemprice" id="itemprice"></td>
+                  <td class="feedback_col"><span id="itemprice">USD</td>
+                </tr>
+                <tr>
+                  <td class="label_col"></td>
+                  <td class="input_col"><button type="button" class="button">Order now</button></td>
+                  <td class="feedback_col"><span id="lastNamePrompt">&nbsp</td>
+                </tr>
+              </table>
+            </div>
+          </form>
+        </div>
+        <!-- tarriff-->
+        <div class="rightwing">
+          <h2 class="formheaders">Tariff</h2>
+          <ul>
+            <li>Flyer:  8USD</li>
+            <li>Flyer:  8USD</li>
+            <li>Flyer:  8USD</li>
+            <li>Flyer:  8USD</li>
+            <li>Flyer:  8USD</li>
+            <li>Flyer:  8USD</li>
+            <li>Flyer:  8USD</li>
+            <li>Flyer:  8USD</li>
+            <li>Flyer:  8USD</li>
+            <li>Flyer:  8USD</li>
+          </ul>
+        </div>
+
+    </div>
+    <!-- Right column -->
+    <div class="right">
+    <h2 class="sidebarhead">About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </div>
+</div>
+
+  </body>
+</html>

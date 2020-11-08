@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="advanced.css">
+    <title>Advanced forms</title>
+    <!-- The two below lines connect this html file with the css and javascript files. -->
+    <script type="text/javascript" src="advancedjavascript.js"></script>
+  </head>
+  <body>
+    <h1>Advanced Forms.</h1>
+    <form action="#">
+      <div id="fullpage">
+        <h2>Make an order:</h2>
+        <table border="0">
+          <tr>
+            <td class="label_col">First name:</td>
+            <td class="input_col"><input name="firstname" id="firstname" type="text" onblur="validateFirstName();" placeholder="First name"></td>
+            <td class="feedback_col"><span id="firstNamePrompt">&nbsp;</span></td>
+          </tr>
+          <tr>
+            <td class="label_col">Last name:</td>
+            <td class="input_col"><input name="lastname" id="lastname" type="text" onblur="validateLastName();" placeholder="Last name"></td>
+            <td class="feedback_col"><span id="lastNamePrompt">&nbsp;</span></td>
+          </tr>
+          <tr>
+            <td class="label_col">Phone number:</td>
+            <td class="input_col"><input name="phonenumber" id="phonenumber" type="text" onblur="validatePhone();" placeholder="xxx-xxx-xxxx"></td>
+            <td class="feedback_col"><span id="phoneNumberPrompt">xxx-xxx-xxxx</span></td>
+          </tr>
+          <tr>
+            <td class="label_col">Order quantity:</td>
+            <td class="input_col"><input name="orderquantity" id="orderquantity" placeholder="Quantity"></td>
+            <td class="feedback_col"><span id="quantityNamePrompt">1-35</span></td>
+          </tr>
+          <tr>
+            <td class="label_col">Item price:</td>
+            <td class="input_col"><input name="itemprice" id="itemprice" value="10.00" readonly></td>
+            <td class="feedback_col"><span id="itemprice">USD</td>
+          </tr>
+          <tr>
+            <td class="input_col"><button type="button" class="button"  onclick="calcorder();">Order now</button></td>
+          </tr>
+        </table>
+        <span id="orderConfirm">&nbsp;</span>
+      </div>
+    </form>
+  </body>
+</html>
